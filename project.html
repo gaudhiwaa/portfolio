@@ -1,0 +1,80 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="project.css" id="my-form">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  </head>
+  <body>
+    <!-- header-menu -->
+    <div class="menu">
+      <img src="menu2.png" alt="menu" onclick="menuToggle();">
+    </div>
+    <div class="menu-click">
+      <ul>
+        <li><a href="index.html"></i>&nbsp&nbsp&nbsp&nbsp&nbspHome</a></li>
+        <li><a href="project.html"></i>&nbsp&nbsp&nbsp&nbsp&nbspProject</a></li>
+        <li><a href="about.html"></i>&nbsp&nbsp&nbsp&nbsp&nbspAbout</a></li>
+        <li><a href="contact.html"></i>&nbsp&nbsp&nbsp&nbsp&nbspContact</a></li>
+      </ul>
+    </div>
+     <section>
+       <div class="header-contact">
+         <h2 data-aos="slide-up">PROJECTS</h2>
+         <h1 data-aos="fade-in">My Projects</h1>
+         <p data-aos="slide-down">some projects that i've made.</p>
+       </div>
+       <div class="carousel-proj">
+         <div class="card-1-1">
+           <a href="https://agoraindonesia.com" target="_blank"></a>
+           <div class="desc-1-1">
+             <h2>AGORA INDONESIA <i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><i class="fab fa-js"></i><i class="fab fa-php"></i>  <i class="fas fa-database"></i></h2>
+             <p>This is a website for Agora Indonesia community description. Implementation of HTML, CSS, JS, PHP & MySQL.</p>
+           </div>
+         </div>
+         <div class="card-1-2">
+           <a href="#"></a>
+           <div class="desc-1-2">
+             <h2>SIMPLE TO-DO LIST <i class="fab fa-react"></i></h2>
+             <p>My first ever project with React. This is a simple website to note your to do list, so it will make your activities are easier to monitored.</p>
+           </div>
+         </div>
+       </div>
+       <div class="carousel-proj-2">
+         <div class="card-2-1">
+           <a href="#"></a>
+           <div class="desc-2-1">
+             <h2>COMING SOON</h2>
+             <p>Coming soon project</p>
+           </div>
+         </div>
+         <div class="card-2-2">
+           <a href="#"></a>
+           <div class="desc-2-2">
+             <h2>COMING SOON</h2>
+             <p>Coming soon project</p>
+           </div>
+         </div>
+       </div>
+       <div class="contact">
+         <div class="contact-list">
+           <h2><i class="fas fa-envelope"><a href="contact.html"></i>Email</a></h2>
+           <p>gaudhiwaa@gmail.com</p><br>
+           <h2><i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/gaudhiwaa/" target="_blank"></i>LinkedIn</a></h2>
+           <p>Gaudhiwaa Hendrasto</p>
+           <h2><i class="fab fa-github"><a href="https://github.com/gaudhiwaa23" target="_blank"></i>Github</a></h2>
+           <p>gaudhiwaa23</p>
+         </div>
+       </div>
+     </section>
+     <script>
+       function menuToggle(){
+         const toggleMenu = document.querySelector('.menu-click');
+         toggleMenu.classList.toggle('active')
+       }
+     </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script> AOS.init(); </script>
+  </body>
+</html>

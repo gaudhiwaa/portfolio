@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gaudhiwaa Hendrasto's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- header-menu -->
+    <div class="menu">
+      <img src="menu2.png" alt="menu" onclick="menuToggle();">
+    </div>
+    <div class="menu-click">
+      <ul>
+        <li><a href="index.html"></i>Home</a></li>
+        <li><a href="project.html"></i>Project</a></li>
+        <li><a href="about.html"></i>About</a></li>
+        <li><a href="contact.html"></i>Contact</a></li>
+      </ul>
+    </div>
+    <!-- profile -->
+    <!-- <div class="profile">
+      <img src="profile-2.png" alt="">
+    </div> -->
+    <!-- header -->
+    <section id="home" class="header">
+      <!-- header-description -->
+      <div class="desc-container">
+        <h2>GAUDHIWAA HENDRASTO</h2>
+        <h1>Front End Developer</h1>
+        <p>Hi! I'm Dhiwa. Second year Informatics Engineering student at Sepuluh Nopember Institute of Technology. A person who has strong curiosity and high dedication to learn. Don't hesitate to contact me, if you want a make a collaboration for a project.</p>
+        <p class="more"><a href="project.html">My Projects</a>or<a href="about.html">About Me</a></p>
+      </div>
+      <!-- header-scroll-icon -->
+      <div class="scroll-mouse" data-aos="fade-out">
+          <a href="#project" class="scroll-down">
+            <div class="mouse">
+              <span></span>
+            </div>
+            <div class="arrow">
+              <span>&#8595;</span>
+            </div>
+          </a>
+      </div>
+    </section>
+    <!-- project -->
+    <section id="project" class="project">
+    <!-- project-menu -->
+      <h2 data-aos="slide-up">SELECTED PROJECTS</h2>
+      <h1 data-aos="slide-up">My Projects</h1>
+      <p class="desc-proj" data-aos="slide-up">These are some projects that i've made.</p>
+      <div class="carousel-proj">
+        <div class="card-one">
+          <a href="https://agoraindonesia.com" target="_blank"></a>
+          <div class="desc-one">
+            <h2>AGORA INDONESIA</h2>
+            <p>Implementation of HTML, CSS, JS, PHP & MySQL for Agora Indonesia community description.</p>
+          </div>
+        </div>
+        <div class="card-two">
+          <a href=""></a>
+          <div class="desc-two">
+            <h2>COMING SOON</h2>
+            <p>Coming soon project</p>
+          </div>
+        </div>
+        <div class="card-three">
+          <a href=""></a>
+          <div class="desc-three">
+            <h2>COMING SOON</h2>
+            <p>Coming soon project</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="contact">
+      <div class="contact-me">
+        <h2 data-aos="slide-up">NEED FRONT-END DEVELOPER?</h2>
+        <a href="contact.html">Let's work together!</a>
+      </div>
+      <div class="contact-list">
+        <h2><i class="fas fa-envelope"><a href="contact.html"></i>Email</a></h2>
+        <p>gaudhiwaa@gmail.com</p><br>
+        <h2><i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/gaudhiwaa/" target="_blank"></i>LinkedIn</a></h2>
+        <p>Gaudhiwaa Hendrasto</p>
+        <h2><i class="fab fa-github"><a href="https://github.com/gaudhiwaa23" target="_blank"></i>Github</a></h2>
+        <p>gaudhiwaa23</p>
+      </div>
+    </section>
+    <script>
+      function menuToggle(){
+        const toggleMenu = document.querySelector('.menu-click');
+        toggleMenu.classList.toggle('active')
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  </body>
+</html>

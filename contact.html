@@ -1,0 +1,64 @@
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title></title>
+     <link rel="stylesheet" href="contact.css" id="my-form">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+     <script src="contact.js"></script>
+   </head>
+   <body>
+     <!-- header-menu -->
+     <div class="menu">
+       <img src="menu2.png" alt="menu" onclick="menuToggle();">
+     </div>
+     <div class="menu-click">
+       <ul>
+         <li><a href="index.html"></i>&nbsp&nbsp&nbsp&nbsp&nbspHome</a></li>
+         <li><a href="project.html"></i>&nbsp&nbsp&nbsp&nbsp&nbspProject</a></li>
+         <li><a href="about.html"></i>&nbsp&nbsp&nbsp&nbsp&nbspAbout</a></li>
+         <li><a href="contact.html"></i>&nbsp&nbsp&nbsp&nbsp&nbspContact</a></li>
+       </ul>
+     </div>
+      <section>
+        <div class="header-contact">
+          <h2 data-aos="slide-up">GET IN TOUCH</h2>
+          <h1 data-aos="fade-in">Contact Me</h1>
+        </div>
+        <div class="container">
+          <form action="https://formspree.io/f/xzbyjady" method="POST" id="my-form">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+              <label for="massage">Massage</label>
+              <textarea name="massage" id="massage" rows="10" cols="30"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div id="status"></div>
+      </section>
+      <script>
+        function menuToggle(){
+          const toggleMenu = document.querySelector('.menu-click');
+          toggleMenu.classList.toggle('active')
+        }
+      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+   </body>
+ </html>

@@ -1,0 +1,420 @@
+*{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: arial;
+}
+section{
+  height: 2600px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -1170px;
+  padding: 100px 0 0 0;
+  /* background-color: orange; */
+}
+.header-contact{
+  text-align: center;
+}
+.header-contact h2{
+  margin-top: 970px;
+  font-size: 14px;
+  font-weight: 1;
+  letter-spacing: 3px;
+  line-height: 30px;
+  color:#888A8E;
+}
+.header-contact h1{
+  margin-bottom: 20px;
+  font-size: 80px;
+  padding-left: 5px;
+  /* line-height: 110px; */
+}
+.header-contact p{
+  color:#888A8E;
+  font-size: 20px;
+}
+
+/* menu */
+.menu{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 40px 0px 0px 40px;
+  font-size: 20px;
+  z-index: 999;
+  /* background-color: pink; */
+}
+.menu img{
+  cursor: pointer;
+  width: 50px;
+}
+.menu-click{
+  z-index: 999;
+  left: 40px;
+  padding: 10px 30px;
+  background-color: #333333;
+  width: 160px;
+  box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  color: white;
+  padding-left: 50px;
+  visibility:hidden;
+  opacity: 0;
+  position: sticky;
+  top: 95px;
+}
+.menu-click a{
+  text-decoration: none;
+  color: white;
+  line-height: 40px;
+}
+.menu-click.active{
+  visibility: visible;
+  opacity: 1;
+}
+.menu-click ul li:hover{
+  color:red;
+  opacity: 1;
+}
+/* Projects */
+.project h2{
+  margin-top: 400px;
+  font-size: 14px;
+  font-weight: 1;
+  letter-spacing: 3px;
+  line-height: 60px;
+  color:#888A8E;
+}
+.project h1{
+  font-size: 60px;
+  padding-left: 5px;
+}
+.project p{
+  font-size: 20px;
+}
+.carousel-proj-2{
+  margin-top: 5px;
+}
+.carousel-proj{
+  margin-top: 70px;
+}
+.carousel-proj,
+.carousel-proj-2{
+  height: 1200px;
+  /* background-color: black; */
+  max-width: 1340px;
+  display: flex;
+  border-radius: 40px;
+  align-items: center;
+}
+.carousel-proj div,
+.carousel-proj-2 div{
+  display: flex;
+  width : 655px;
+  height: 700px;
+  /* background-color: #888A8E; */
+  margin: 20px auto;
+  /* margin-left: 25px;
+  margin-right: 25px; */
+  padding: 0px 0px 0px 0px;
+  overflow-x: hidden;
+  flex-direction: column;
+  /* filter: brightness(0.7); */
+  transition: 0.25s;
+  /* border-radius: 35px; */
+}
+
+
+.carousel-proj .card-1-1,
+.carousel-proj-2 .card-2-1{
+  margin-left: -60px;
+  margin-right: 20px;
+}
+
+.carousel-proj .card-1-2,
+.carousel-proj-2 .card-2-2{
+  margin-right: -60px;
+  margin-left: 20px;
+}
+
+.carousel-proj .card-1-1{
+  background-image:url(agora2.png);
+  background-size:845px;
+  background-position:-80px 0px;
+  filter:brightness(50%);
+}
+
+.carousel-proj .card-1-2{
+  background-image:url(todolist.png);
+  background-size:700px;
+  background-position:-15px -100px;
+  filter:brightness(50%);
+}
+
+.carousel-proj .card-1-1,
+.carousel-proj .card-1-2,
+.carousel-proj-2 .card-2-1,
+.carousel-proj-2 .card-2-2{
+  filter: brightness(0.7);
+  background-color: white;
+}
+
+.desc-1-1 p,
+.desc-1-2 p,
+.desc-2-1 p,
+.desc-2-2 p{
+  text-align: justify;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: white;
+  line-height: 25px;
+  font-size: 15px;
+  background-color: black;
+}
+.carousel-proj div h2,
+.carousel-proj-2 div h2{
+  margin-top: 550px;
+  padding-left: 50px;
+  line-height: 40px;
+  background-color: black;
+  opacity: 0.7;
+  color: #888A8E;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 1;
+  /* transition: 1s; */
+}
+.carousel-proj div p,
+.carousel-proj div h2,
+.carousel-proj-2 div p,
+.carousel-proj-2 div h2{
+  visibility: hidden;
+  opacity: 0;
+}
+.carousel-proj div:hover h2,
+.carousel-proj-2 div:hover h2{
+  visibility: visible;
+  opacity: 1;
+}
+.carousel-proj div:hover p,
+.carousel-proj-2 div:hover p{
+  visibility: visible;
+  opacity: 1;
+}
+.card-1-1:hover .desc-1-1,
+.card-1-2:hover .desc-1-2,{
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel-proj .card-1-1:hover,
+.carousel-proj .card-1-2:hover,
+.carousel-proj-2 .card-2-1:hover,
+.carousel-proj-2 .card-2-2:hover{
+  transform: scale(1.01);
+  filter: brightness(1);
+  z-index: 100;
+  /* border-radius: 30px; */
+}
+
+.card-1-1 a,
+.card-1-2 a,
+.card-2-1 a,
+.card-2-2 a{
+  position: absolute;
+  width : 625px;
+  height: 700px;
+  margin: 0px 0px 0px 0px;
+}
+/* slide */
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.carousel-proj i,
+.carousel-proj-2 i{
+  width: 25px;
+  font-size: 20px;
+}
+.carousel-proj-2{
+  margin-bottom: -1380px;
+}
+/* contact-list */
+.contact .contact-list{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+.contact .contact-list h2{
+  line-height: 40px;
+  font-size: 20px;
+}
+.contact .contact-list a{
+  text-decoration: none;
+  margin-right: 25px;
+  color: black;
+}
+.contact .contact-list h2{
+  margin-right: -15px;
+}
+.contact .contact-list p{
+  margin-right: 25px;
+}
+.contact .contact-list i{
+  margin-right: -15px;
+}
+.contact .contact-me a::after{
+  content:'';
+  display:flex;
+  margin: 0 0px 0 290px;
+  width: 0px;
+  height: 2px;
+  background: black;
+  align-items: center;
+  /* margin-top: 10px; */
+}
+.contact .contact-me a:hover::after{
+  width: 57%;
+  /* margin-left: 500px; */
+  transition: width .2s;
+}
+.contact{
+  /* position: absolute; */
+  margin-top: 1300px;
+  width: 100%;
+  height: 10px;
+  padding: 30px;
+  /* background-color: pink; */
+  padding-top: 100px;
+}
+.contact-list{
+  padding-left: 20px;
+  padding-top: 15px;
+  background-color: #E5E5E5;
+  /* opacity: 0.9; */
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.contact .contact-list a:hover{
+  background: -webkit-linear-gradient(#ED213A,#93291E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media only screen and (max-width: 1400px){
+  .carousel-proj div,
+  .carousel-proj-2 div{
+    width : 555px;
+    height: 700px;
+  }
+  .carousel-proj .card-1-1{
+    background-position:-120px 0px;
+  }
+  .carousel-proj .card-1-2{
+    background-size: 600px;
+    background-position:-20px -100px;
+  }
+  .card-1-1 a,
+  .card-1-2 a,
+  .card-2-1 a,
+  .card-2-2 a{
+    width : 555px;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .carousel-proj div,
+  .carousel-proj-2 div{
+    width : 455px;
+    height: 700px;
+  }
+  .card-1-1 a,
+  .card-1-2 a,
+  .card-2-1 a,
+  .card-2-2 a{
+    width : 455px;
+    height: 700px;
+  }
+  .carousel-proj .card-1-1{
+    background-size: 600px;
+    background-position:-60px 80px;
+  }
+  .carousel-proj .card-1-2{
+    background-size: 500px;
+    background-position:-20px -70px;
+  }
+}
+@media only screen and (max-width: 980px){
+  .carousel-proj,
+  .carousel-proj-2{
+    /* background-color: orange; */
+
+    flex-direction: column;
+  }
+  .carousel-proj{
+    margin-top: 10px;
+  }
+  .header-contact h2{
+    margin-top: 1775px;
+  }
+  .contact-list p{
+    margin-right: -125px;
+  }
+  .carousel-proj .card-1-1,
+  .carousel-proj-2 .card-2-1,
+  .carousel-proj .card-1-2,
+  .carousel-proj-2 .card-2-2{
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow-y: hidden;
+  }
+  .contact .contact-list{
+    margin-top: 900px;
+  }
+  .contact .contact-list p{
+    visibility: hidden;
+    margin-right:-100px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .contact .contact-list p{
+    margin-right:-150px;
+  }
+  .contact .contact-list{
+    padding-right: 60px;
+  }
+  .card-1-1 a,
+  .card-1-2 a,
+  .card-2-1 a,
+  .card-2-2 a{
+    height: 560px;
+  }
+
+  .contact .contact-list{
+    margin-top: -5px;
+  }
+
+  .header-contact h1{
+    font-size: 70px;
+  }
+  .header-contact h2{
+    margin-top: 1900px;
+  }
+}
